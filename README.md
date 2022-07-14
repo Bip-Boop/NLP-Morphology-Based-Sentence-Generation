@@ -31,20 +31,24 @@ schemes = (SentenceScheme(["n", "v", "n"], [None, None, None], None),
 ```
 Template is created by assigning part of speech to each word in the sentence: v for verb, n for noun (for more detail see tools.py)
 
-Abstract scheme is defined by a list: 
+Abstract scheme is defined by a list:
+
 ```["n", "v", "n"]```
 
-You can also provide concrete words in the following array: 
+You can also provide concrete words in the following array:
+
 ```[None, "cook", None]```
 
 Punctuation is optional.
 
 Next, create text constructor, providing more words for context:
+
 ```tc = TextConstructor(["apples", "water", "sugar"], schemes)]```
 
 You can use different constructors for different contexts.
 
 Now it is possible to generate text:
+
 ```print(tc.generate_text(input_involvement_probability=0.9, length=8).replace("_", " "))```
 
 Input involvement probability describes how often the exact words from context will appear in the result.
