@@ -6,7 +6,6 @@ from random import choice, randint, uniform
 from nltk.corpus import wordnet as wn
 
 
-# (Охапка дров и плов готов)
 class TextConstructor:
 
     def __init__(self, available_words, abstract_sentences):
