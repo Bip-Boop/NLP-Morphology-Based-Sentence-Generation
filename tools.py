@@ -169,7 +169,7 @@ class StaticContextTools:
         return result
 
 
-# Тяжелая артилерия
+# Takes even more time
 class DynamicContextTools:
 
     def __init__(self):
