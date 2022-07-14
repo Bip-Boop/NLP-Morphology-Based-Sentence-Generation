@@ -29,4 +29,4 @@ tc = TextConstructor(["apples", "water", "sugar", "orange", "vodka", "syrup"], s
 tc = TextConstructor(["cucumber", "dill", "octopus", "herring", "flour", "water"], schemes)
 tc = TextConstructor(["cheese", "dill", "toadstools", "cream", "flour", "water", "basil"], schemes)
 
-print(tc.generate_text(input_involvement_probability=0.9, lenght=8).replace("_", " "))
+print(tc.generate_text(input_involvement_probability=0.9, length=8).replace("_", " "))

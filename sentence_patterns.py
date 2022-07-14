@@ -28,15 +28,15 @@ class TextConstructor:
         self.connected_words = list(self.connected_words)
 
         self.senteces = list()
-        self.lenght = None
+        self.length = None
 
-    def generate_text(self, lenght=None, input_involvement_probability = 0.5):
+    def generate_text(self, length=None, input_involvement_probability = 0.5):
         text = ""
-        self.lenght = lenght
-        if self.lenght is None:
-            self.lenght = randint(2, len(self.available_words))
+        self.length = length
+        if self.length is None:
+            self.length = randint(2, len(self.available_words))
 
-        for i in range(self.lenght):
+        for i in range(self.length):
             self.senteces.append(deepcopy(choice(self.abstract_sentences)))
 
         for s in self.senteces:
@@ -105,5 +105,3 @@ class SentenceScheme:
 #sc = SentenceScheme(["a", "n", "p", "a", "n"], ["a", None, "in", "the", "box"], TextConstructor(["box"], ("f")) )
 #sc.complete()
 #print(sc.get_sentence())
-
-
